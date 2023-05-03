@@ -1,10 +1,27 @@
 {
   "name": "wasm-game-of-life",
   "version": "1.0.0",
-  "main": "www/index.js",
+  "private": true,
   "scripts": {
-    "build": "cd www && npm i && npm run build"
+    "build": "ultra -r build",
+    "fmt": "ultra -r fmt",
+    "lint": "ultra -r lint",
+    "type-check": "ultra -r type-check",
+    "dev": "ultra -r --filter \"www\" dev"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "volta": {
+    "node": "16.20.0"
+  },
+  "workspaces": [
+    "./pkg",
+    "./www"
+  ],
+  "devDependencies": {
+    "ultra-runner": "^3.10.5"
+  },
+  "overrides": {
+    "tsconfig-paths": "^4.0.0"
+  }
 }

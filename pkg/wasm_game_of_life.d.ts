@@ -3,8 +3,8 @@
 /**
 */
 export enum Cell {
-  Dead,
-  Alive,
+  Dead = 0,
+  Alive = 1,
 }
 /**
 */
@@ -14,23 +14,20 @@ export class Universe {
 */
   tick(): void;
 /**
-* @returns {Universe} 
+* @param {Uint32Array} input
+* @returns {Universe}
 */
-  static new(): Universe;
+  static new(input: Uint32Array): Universe;
 /**
-* @returns {number} 
+* @returns {number}
 */
   width(): number;
 /**
-* @returns {number} 
+* @returns {number}
 */
   height(): number;
 /**
-* @returns {number} 
+* @returns {number}
 */
   cells(): number;
-/**
-* @returns {string} 
-*/
-  render(): string;
 }

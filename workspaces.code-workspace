@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "www"
+		},
+		{
+			"path": "src"
+		},
+		{
+			"path": "."
+		},
+	],
+	"settings": {
+		"typescript.tsdk": "node_modules/typescript/lib"
+	}
+}

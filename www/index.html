@@ -1,29 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
     <meta charset="utf-8" />
     <title>Hello wasm-pack!</title>
-    <style>
-      .container {
-        margin-top: 30px;
-        width: 100vw;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-    </style>
   </head>
   <body>
-    <div class="container">
-      <h1>canvas + jsからwasmのメモリにアクセスして描画</h1>
-      <canvas id="game-of-life-canvas"></canvas>
-    </div>
-    <div class="container">
-      <h1>text + wasm側で描画</h1>
-      <div style="text-align: center;" id="game-of-life-text"></div>
-    </div>
-    <script src="./bootstrap.js"></script>
+    <div id="root"></div>
+    <script type="module" src="./src/index.tsx"></script>
   </body>
 </html>
