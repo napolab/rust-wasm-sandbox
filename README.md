@@ -5,12 +5,13 @@
 # Usage
 
 ```
-$ wasm-pack build
-$ cd www && npm i && npm start
+npm i
+wasm-pack build
+npm run dev
 ```
 
 # Demo
 
 こちらで完成物を見れます。
 
-https://wasm-rust-game-of-life.netlify.app/
+https://lifegame.napochaan.com/
